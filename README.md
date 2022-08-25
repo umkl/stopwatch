@@ -1,12 +1,5 @@
+<img src="./assets/command-icon.png" width="100px"/>
 
-<style type="text/css">
-    img {
-        width: 100px;
-
-    }
-</style>
-
-![stopwatch](./assets/command-icon.png)
 # stopwatch
 ## why?
 In order to track the time it would be handy if you had a little stopwatch at hand I thought. Because raycast is _the tool_ for being handy I thought I would develop a extension for it.
