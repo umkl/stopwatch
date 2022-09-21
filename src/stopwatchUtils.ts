@@ -15,9 +15,8 @@ async function stopAndCopyStopwatch() {
   showHUD(files.length + " stopwatches found");
   files.forEach((stopwatchFile: string) => {
     if (extname(stopwatchFile) == ".timer") {
-      const stopwatchName = readFileSync(environment.supportPath + "/" + stopwatchFile).toString();
       const stopwatchFileParts = stopwatchFile.split("---");
-      let timeElapsed = new Date(Date.now() - parseInt(stopwatchFileParts[1]));
+      const timeElapsed = new Date(Date.now() - parseInt(stopwatchFileParts[1]));
       const elapsed = Date.now() - parseInt(stopwatchFileParts[1]);
       const elapsedFormatted = moment.utc(timeElapsed).format("HH:mm:ss");
       showHUD(`Time elapsed: ${elapsed}ms - ${elapsedFormatted}`);
